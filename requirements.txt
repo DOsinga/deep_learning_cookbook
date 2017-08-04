@@ -1,2 +1,3 @@
 twitter
 gensim
+seaborn
