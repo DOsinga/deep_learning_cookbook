@@ -53,7 +53,10 @@ def plot_images(ary):
     if w * h != count:
         h += 1
 
-    if len(ary.shape) < 4 or ary.shape[3] == 1:
+    if len(ary.shape) < 4:
+        cmap = 'Greys'
+    elif ary.shape[3] == 1:
+        ary = ary[:,:,:, 0]
         cmap = 'Greys'
     else:
         cmap = None
