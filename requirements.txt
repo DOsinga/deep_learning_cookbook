@@ -4,7 +4,9 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-appnope==0.1.0            # via ipython
+args==0.1.0               # via clint
+audioread==2.1.5          # via librosa
+backports.csv==1.0.5      # via internetarchive
 beautifulsoup4==4.6.0     # via bs4
 bleach==1.5.0             # via nbconvert, tensorflow-tensorboard
 boto3==1.5.9              # via smart-open
@@ -14,14 +16,17 @@ bs4==0.0.1
 bz2file==0.98             # via smart-open
 certifi==2017.11.5        # via requests
 chardet==3.0.4            # via requests
+clint==0.5.1              # via internetarchive
 cycler==0.10.0            # via matplotlib
-decorator==4.1.2          # via ipython, traitlets
+decorator==4.1.2          # via ipython, librosa, traitlets
+docopt==0.6.2             # via internetarchive
 docutils==0.14            # via botocore
 entrypoints==0.2.3        # via nbconvert
 enum34==1.1.6             # via tensorflow
 gensim==3.2.0
 html5lib==0.9999999       # via bleach, tensorflow-tensorboard
 idna==2.6                 # via requests
+internetarchive==1.7.6
 ipykernel==4.7.0          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
 ipython-genutils==0.2.0   # via nbformat, notebook, qtconsole, traitlets
 ipython==6.2.1
@@ -29,12 +34,17 @@ ipywidgets==7.1.0         # via jupyter
 jedi==0.11.1              # via ipython
 jinja2==2.10              # via nbconvert, notebook
 jmespath==0.9.3           # via boto3, botocore
+joblib==0.11              # via librosa
+jsonpatch==1.21           # via internetarchive
+jsonpointer==2.0          # via jsonpatch
 jsonschema==2.6.0         # via nbformat
 jupyter-client==5.2.1     # via ipykernel, jupyter-console, notebook, qtconsole
 jupyter-console==5.2.0    # via jupyter
 jupyter-core==4.4.0       # via jupyter-client, nbconvert, nbformat, notebook, qtconsole
 jupyter==1.0.0
 keras==2.1.2
+librosa==0.6.0
+llvmlite==0.22.0          # via numba
 markdown==2.6.11          # via tensorflow-tensorboard
 markupsafe==1.0           # via jinja2
 matplotlib==2.1.1
@@ -43,11 +53,13 @@ mwparserfromhell==0.5
 nbconvert==5.3.1          # via jupyter, notebook
 nbformat==4.4.0           # via ipywidgets, nbconvert, notebook
 notebook==5.2.2           # via jupyter, widgetsnbextension
-numpy==1.14.0             # via gensim, keras, matplotlib, scipy, tensorflow, tensorflow-tensorboard
+numba==0.37.0             # via resampy
+numpy==1.14.0             # via gensim, keras, librosa, matplotlib, numba, resampy, scipy, tensorflow, tensorflow-tensorboard
 pandocfilters==1.4.2      # via nbconvert
 parso==0.1.1              # via jedi
 pexpect==4.3.1            # via ipython
 pickleshare==0.7.4        # via ipython
+plyvel==1.0.4
 prompt-toolkit==1.0.15    # via ipython, jupyter-console
 protobuf==3.5.1           # via tensorflow, tensorflow-tensorboard
 ptyprocess==0.5.2         # via pexpect, terminado
@@ -58,19 +70,23 @@ pytz==2017.3              # via matplotlib
 pyyaml==3.12              # via keras
 pyzmq==16.0.3             # via jupyter-client
 qtconsole==4.3.1          # via jupyter
-requests==2.18.4          # via smart-open
+requests==2.18.4          # via internetarchive, smart-open, spotipy
+resampy==0.2.0            # via librosa
 s3transfer==0.1.12        # via boto3
-scikit-learn==0.19.1      # via sklearn
-scipy==1.0.0              # via gensim, keras
+schema==0.6.7             # via internetarchive
+scikit-learn==0.19.1      # via librosa, sklearn
+scipy==1.0.0              # via gensim, keras, librosa, resampy
 simplegeneric==0.8.1      # via ipython
-six==1.11.0               # via bleach, cycler, gensim, html5lib, keras, matplotlib, prompt-toolkit, protobuf, python-dateutil, tensorflow, tensorflow-tensorboard, traitlets
+six==1.11.0               # via bleach, cycler, gensim, html5lib, internetarchive, keras, librosa, matplotlib, prompt-toolkit, protobuf, python-dateutil, resampy, tensorflow, tensorflow-tensorboard, traitlets
 sklearn==0.0
 smart-open==1.5.6         # via gensim
+spotipy==2.4.4
 tensorflow-tensorboard==0.4.0rc3  # via tensorflow
 tensorflow==1.4.1
 terminado==0.8.1          # via notebook
 testpath==0.3.1           # via nbconvert
 tornado==4.5.3            # via ipykernel, notebook, terminado
+tqdm==4.19.5
 traitlets==4.3.2          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-core, nbconvert, nbformat, notebook, qtconsole
 urllib3==1.22             # via requests
 wcwidth==0.1.7            # via prompt-toolkit

@@ -9,3 +9,6 @@ sklearn
 tensorflow
 plyvel
 internetarchive
+librosa
+tqdm
+spotipy
