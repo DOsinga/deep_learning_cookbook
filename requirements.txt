@@ -4,6 +4,7 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
+appnope==0.1.0            # via ipython
 args==0.1.0               # via clint
 audioread==2.1.5          # via librosa
 backports.csv==1.0.5      # via internetarchive
