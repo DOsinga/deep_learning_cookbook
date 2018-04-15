@@ -53,10 +53,6 @@
    "source": [
     "def extract_stackexchange(filename, limit=1000000):\n",
     "    json_file = filename + 'limit=%s.json' % limit\n",
-    "#     print(json_file)\n",
-    "#     if os.path.exists(json_file):\n",
-    "#         with open(json_file) as fin:\n",
-    "#             return json.load(fin)\n",
     "\n",
     "    rows = []\n",
     "    for i, line in enumerate(os.popen('7z x -so \"%s\" Posts.xml' % filename)):\n",
@@ -85,8 +81,8 @@
     "\n",
     "\n",
     "xml_7z = utils.get_file(\n",
-    "    fname=\"travel.stackexchange.com.7z\",\n",
-    "    origin=\"https://ia800107.us.archive.org/27/items/stackexchange/travel.stackexchange.com.7z\",\n",
+    "    fname='travel.stackexchange.com.7z',\n",
+    "    origin='https://ia800107.us.archive.org/27/items/stackexchange/travel.stackexchange.com.7z',\n",
     ")\n",
     "print()\n",
     "\n",
@@ -612,7 +608,7 @@
  "metadata": {
   "anaconda-cloud": {},
   "kernelspec": {
-   "display_name": "Python [default]",
+   "display_name": "Python 3",
    "language": "python",
    "name": "python3"
   },
