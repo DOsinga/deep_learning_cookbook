@@ -1,7 +1,8 @@
 bs4
 gensim
 ipython
-jupyter 
+jupyter
+notebook>5.4.1
 keras
 matplotlib
 mwparserfromhell
