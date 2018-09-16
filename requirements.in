@@ -1,6 +1,8 @@
 bs4
+flickrapi
 gensim
 geopandas
+h5py
 internetarchive
 ipython
 jupyter

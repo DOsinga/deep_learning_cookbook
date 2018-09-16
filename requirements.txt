@@ -28,8 +28,10 @@ docutils==0.14            # via botocore
 entrypoints==0.2.3        # via nbconvert
 enum34==1.1.6             # via tensorflow
 fiona==1.7.11.post1       # via geopandas
+flickrapi==2.4.0
 gensim==3.2.0
 geopandas==0.3.0
+h5py==2.8.0
 html5lib==0.9999999       # via bleach, tensorflow-tensorboard
 idna==2.6                 # via requests
 internetarchive==1.7.6
@@ -61,7 +63,8 @@ nbconvert==5.3.1          # via jupyter, notebook
 nbformat==4.4.0           # via ipywidgets, nbconvert, notebook
 notebook==5.6.0
 numba==0.37.0             # via resampy
-numpy==1.14.0             # via gensim, keras, librosa, matplotlib, numba, pandas, resampy, scipy, tensorflow, tensorflow-tensorboard
+numpy==1.14.0             # via gensim, h5py, keras, librosa, matplotlib, numba, pandas, resampy, scipy, tensorflow, tensorflow-tensorboard
+oauthlib==2.1.0           # via requests-oauthlib
 pandas==0.22.0            # via geopandas
 pandocfilters==1.4.2      # via nbconvert
 parso==0.1.1              # via jedi
@@ -81,7 +84,9 @@ pytz==2017.3              # via matplotlib, pandas
 pyyaml==3.12              # via keras
 pyzmq==17.1.2             # via jupyter-client, notebook
 qtconsole==4.3.1          # via jupyter
-requests==2.18.4          # via internetarchive, smart-open, spotipy
+requests-oauthlib==1.0.0  # via flickrapi
+requests-toolbelt==0.8.0  # via flickrapi
+requests==2.18.4          # via flickrapi, internetarchive, requests-oauthlib, requests-toolbelt, smart-open, spotipy
 resampy==0.2.0            # via librosa
 s3transfer==0.1.12        # via boto3
 schema==0.6.7             # via internetarchive
@@ -90,7 +95,7 @@ scipy==1.0.0              # via gensim, keras, librosa, resampy
 send2trash==1.5.0         # via notebook
 shapely==1.6.4.post1      # via geopandas
 simplegeneric==0.8.1      # via ipython
-six==1.11.0               # via bleach, cycler, fiona, gensim, html5lib, internetarchive, keras, librosa, matplotlib, munch, prompt-toolkit, protobuf, python-dateutil, resampy, tensorflow, tensorflow-tensorboard, traitlets
+six==1.11.0               # via bleach, cycler, fiona, flickrapi, gensim, h5py, html5lib, internetarchive, keras, librosa, matplotlib, munch, prompt-toolkit, protobuf, python-dateutil, resampy, tensorflow, tensorflow-tensorboard, traitlets
 sklearn==0.0
 smart-open==1.5.6         # via gensim
 spotipy==2.4.4
