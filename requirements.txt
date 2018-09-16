@@ -4,7 +4,6 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-appnope==0.1.0            # via ipython
 args==0.1.0               # via clint
 audioread==2.1.5          # via librosa
 backports.csv==1.0.5      # via internetarchive
@@ -68,6 +67,7 @@ pandocfilters==1.4.2      # via nbconvert
 parso==0.1.1              # via jedi
 pexpect==4.3.1            # via ipython
 pickleshare==0.7.4        # via ipython
+pillow==5.2.0
 plyvel==1.0.4
 prometheus-client==0.3.1  # via notebook
 prompt-toolkit==1.0.15    # via ipython, jupyter-console
