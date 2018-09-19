@@ -3,6 +3,7 @@ flickrapi
 gensim
 geopandas
 h5py
+imageio
 internetarchive
 ipython
 jupyter

@@ -34,6 +34,7 @@ geopandas==0.3.0
 h5py==2.8.0
 html5lib==0.9999999       # via bleach, tensorflow-tensorboard
 idna==2.6                 # via requests
+imageio==2.4.1
 internetarchive==1.7.6
 ipykernel==4.7.0          # via ipywidgets, jupyter, jupyter-console, notebook, qtconsole
 ipython-genutils==0.2.0   # via nbformat, notebook, qtconsole, traitlets
@@ -63,7 +64,7 @@ nbconvert==5.3.1          # via jupyter, notebook
 nbformat==4.4.0           # via ipywidgets, nbconvert, notebook
 notebook==5.6.0
 numba==0.37.0             # via resampy
-numpy==1.14.0             # via gensim, h5py, keras, librosa, matplotlib, numba, pandas, resampy, scipy, tensorflow, tensorflow-tensorboard
+numpy==1.14.0             # via gensim, h5py, imageio, keras, librosa, matplotlib, numba, pandas, resampy, scipy, tensorflow, tensorflow-tensorboard
 oauthlib==2.1.0           # via requests-oauthlib
 pandas==0.22.0            # via geopandas
 pandocfilters==1.4.2      # via nbconvert
