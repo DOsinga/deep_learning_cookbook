@@ -4,11 +4,13 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
+absl-py==0.6.1            # via tensorflow-gpu
 args==0.1.0               # via clint
+astor==0.7.1              # via tensorflow-gpu
 audioread==2.1.5          # via librosa
 backports.csv==1.0.5      # via internetarchive
 beautifulsoup4==4.6.0     # via bs4
-bleach==1.5.0             # via nbconvert, tensorflow-tensorboard
+bleach==1.5.0             # via nbconvert
 boto3==1.5.9              # via smart-open
 boto==2.48.0              # via smart-open
 botocore==1.8.23          # via boto3, s3transfer
@@ -26,13 +28,14 @@ descartes==1.1.0          # via geopandas
 docopt==0.6.2             # via internetarchive
 docutils==0.14            # via botocore
 entrypoints==0.2.3        # via nbconvert
-enum34==1.1.6             # via tensorflow
 fiona==1.7.11.post1       # via geopandas
 flickrapi==2.4.0
+gast==0.2.0               # via tensorflow-gpu
 gensim==3.2.0
 geopandas==0.3.0
+grpcio==1.17.1            # via tensorboard, tensorflow-gpu
 h5py==2.8.0
-html5lib==0.9999999       # via bleach, tensorflow-tensorboard
+html5lib==0.9999999       # via bleach
 idna==2.6                 # via requests
 imageio==2.4.1
 internetarchive==1.7.6
@@ -51,10 +54,12 @@ jupyter-client==5.2.1     # via ipykernel, jupyter-console, notebook, qtconsole
 jupyter-console==5.2.0    # via jupyter
 jupyter-core==4.4.0       # via jupyter-client, nbconvert, nbformat, notebook, qtconsole
 jupyter==1.0.0
+keras-applications==1.0.6  # via tensorflow-gpu
+keras-preprocessing==1.0.5  # via tensorflow-gpu
 keras==2.1.2
 librosa==0.6.0
 llvmlite==0.22.0          # via numba
-markdown==2.6.11          # via tensorflow-tensorboard
+markdown==2.6.11          # via tensorboard
 markupsafe==1.0           # via jinja2
 matplotlib==2.1.1
 mistune==0.8.3            # via nbconvert
@@ -64,7 +69,7 @@ nbconvert==5.3.1          # via jupyter, notebook
 nbformat==4.4.0           # via ipywidgets, nbconvert, notebook
 notebook==5.6.0
 numba==0.37.0             # via resampy
-numpy==1.14.0             # via gensim, h5py, imageio, keras, librosa, matplotlib, numba, pandas, resampy, scipy, tensorflow, tensorflow-tensorboard
+numpy==1.14.0             # via gensim, h5py, imageio, keras, keras-applications, keras-preprocessing, librosa, matplotlib, numba, pandas, resampy, scipy, tensorboard, tensorflow-gpu
 oauthlib==2.1.0           # via requests-oauthlib
 pandas==0.22.0            # via geopandas
 pandocfilters==1.4.2      # via nbconvert
@@ -75,7 +80,7 @@ pillow==5.2.0
 plyvel==1.0.4
 prometheus-client==0.3.1  # via notebook
 prompt-toolkit==1.0.15    # via ipython, jupyter-console
-protobuf==3.5.1           # via tensorflow, tensorflow-tensorboard
+protobuf==3.6.1           # via tensorboard, tensorflow-gpu
 ptyprocess==0.5.2         # via pexpect, terminado
 pygments==2.2.0           # via ipython, jupyter-console, nbconvert, qtconsole
 pyparsing==2.2.0          # via matplotlib
@@ -96,12 +101,13 @@ scipy==1.0.0              # via gensim, keras, librosa, resampy
 send2trash==1.5.0         # via notebook
 shapely==1.6.4.post1      # via geopandas
 simplegeneric==0.8.1      # via ipython
-six==1.11.0               # via bleach, cycler, fiona, flickrapi, gensim, h5py, html5lib, internetarchive, keras, librosa, matplotlib, munch, prompt-toolkit, protobuf, python-dateutil, resampy, tensorflow, tensorflow-tensorboard, traitlets
+six==1.11.0               # via absl-py, bleach, cycler, fiona, flickrapi, gensim, grpcio, h5py, html5lib, internetarchive, keras, keras-preprocessing, librosa, matplotlib, munch, prompt-toolkit, protobuf, python-dateutil, resampy, tensorboard, tensorflow-gpu, traitlets
 sklearn==0.0
 smart-open==1.5.6         # via gensim
 spotipy==2.4.4
-tensorflow-tensorboard==0.4.0rc3  # via tensorflow
-tensorflow==1.4.1
+tensorboard==1.12.1       # via tensorflow-gpu
+tensorflow-gpu==1.12.0
+termcolor==1.1.0          # via tensorflow-gpu
 terminado==0.8.1          # via notebook
 testpath==0.3.1           # via nbconvert
 tornado==4.5.3            # via ipykernel, notebook, terminado
@@ -109,6 +115,6 @@ tqdm==4.19.5
 traitlets==4.3.2          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-core, nbconvert, nbformat, notebook, qtconsole
 urllib3==1.22             # via requests
 wcwidth==0.1.7            # via prompt-toolkit
-werkzeug==0.14.1          # via tensorflow-tensorboard
-wheel==0.30.0             # via tensorflow, tensorflow-tensorboard
+werkzeug==0.14.1          # via tensorboard
+wheel==0.30.0             # via tensorboard, tensorflow-gpu
 widgetsnbextension==3.1.0  # via ipywidgets

@@ -16,5 +16,5 @@ Pillow
 plyvel
 sklearn
 spotipy
-tensorflow
+tensorflow-gpu==1.12.0
 tqdm
