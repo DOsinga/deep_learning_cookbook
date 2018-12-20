@@ -20,3 +20,6 @@ tensorflow-gpu==1.12.0
 tqdm
 twitter
 emoji
+gutenberg
+nltk
+infloect
