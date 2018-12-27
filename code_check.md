@@ -35,6 +35,15 @@
 - [ ] 07.2 Emoji Suggestions.ipynb
    - twitter / emoji がない。 pip install twitter / emoji
    - 本文にあわせ data/emojis.csv を data/emojis.txt に変更
+   - `[x['text'] for x in itertools.islice(status_stream.sample(), 0, 5) if x.get('text')]` だと、ほとんど空のリストになる。if x.get('text') してからisliceでは?
+   - `len(train_tweets) / BATCH_SIZE` は Python3 では浮動小数となるので `len(train_tweets) // BATCH_SIZE` に変更
+   - `os.makedirs('zoo/07', exist_ok=True)` を追加
+   - `"75s - loss: 2.3855 - acc: 0.4368\n[2.8089022636413574, 0.38840296648550726]"` なにこれ？
+   - 'data/twitter_w2v.model' が存在しない > 学習コードを追加
+   - 'w2v_model.syn0' > 'w2v_model.wv.syn0'
+   - 'model[...]' > 'model.wv[...]'
+   - 'in model:' > 'in model.wv:'
+   - 日本語の取扱に関する記述があっても良いかも
 - [ ] 07.3 Tweet Embeddings.ipynb
 - [ ] 08.1 Sequence to sequence mapping.ipynb
     - ライブラリのインストールが必要
