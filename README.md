@@ -22,12 +22,35 @@ jupyter notebook
 
 #### [03.1 Using pre trained word embeddings.ipynb](https://github.com/DOsinga/deep_learning_cookbook/blob/master/03.1%20Using%20pre%20trained%20word%20embeddings.ipynb)
 
-In this notebook, we'll use pretrained 
+In this notebook, we'll use a pretrained word embedding model (Word2Vec) to explore how word embeddings allow us
+to explore similarities between words and relationships between words. For example, find the capital of a country
+or the main products of a company. We'll finish with a demonstration of using t-SNE to plot high dimensional
+spaces on a 2D graph. 
 
 #### [03.2 Domain specific ranking using word2vec cosine distance.ipynb](https://github.com/DOsinga/deep_learning_cookbook/blob/master/03.2%20Domain%20specific%20ranking%20using%20word2vec%20cosine%20distance.ipynb)
+
+Building on the previous recipe, we'll use the distances between the words to do domain specific rankings. Specifically
+we'll look at countries. First we create a small classifier to find all countries in the set of words, based on a small
+sample. We'll then use a similar approach to show relevance for specific words for countries. For example, since
+cricket is closer to India than to Germany, cricket is probably more relevant. We can plot this on a world map which
+lights up countries based on their relevance for specific words.
+
 #### [04.1 Collect movie data from Wikipedia.ipynb](https://github.com/DOsinga/deep_learning_cookbook/blob/master/04.1%20Collect%20movie%20data%20from%20Wikipedia.ipynb)
+
+This notebook shows how to download a dump of the Wikipedia and parse it to extract structured data by using the
+category and template information. We'll use this to create a set of movies including rating data.
+
 #### [04.2 Build a recommender system based on outgoing Wikipedia links.ipynb](https://github.com/DOsinga/deep_learning_cookbook/blob/master/04.2%20Build%20a%20recommender%20system%20based%20on%20outgoing%20Wikipedia%20links.ipynb)
+
+Based on the structured data extracted in the previous notebook, we'll train a network that learns to predict a movie
+based on the outgoing links on the corresponding Wikipedia page. This creates embeddings for the movies. This in
+turn lets us recommend movies based on other movies - similar movies are next to each other in the embedding
+space.
+
 #### [05.1 Generating Text in the Style of an Example Text.ipynb](https://github.com/DOsinga/deep_learning_cookbook/blob/master/05.1%20Generating%20Text%20in%20the%20Style%20of%20an%20Example%20Text.ipynb)
+
+Switching 
+
 #### [06.1 Question matching.ipynb](https://github.com/DOsinga/deep_learning_cookbook/blob/master/06.1%20Question%20matching.ipynb)
 #### [07.1 Text Classification.ipynb](https://github.com/DOsinga/deep_learning_cookbook/blob/master/07.1%20Text%20Classification.ipynb)
 #### [07.2 Emoji Suggestions.ipynb](https://github.com/DOsinga/deep_learning_cookbook/blob/master/07.2%20Emoji%20Suggestions.ipynb)
