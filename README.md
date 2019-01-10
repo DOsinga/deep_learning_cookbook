@@ -49,9 +49,16 @@ space.
 
 #### [05.1 Generating Text in the Style of an Example Text.ipynb](https://github.com/DOsinga/deep_learning_cookbook/blob/master/05.1%20Generating%20Text%20in%20the%20Style%20of%20an%20Example%20Text.ipynb)
 
-Switching 
+We train an LSTM to write Shakespeare. We'll follow this up with one that generates Python code by training a similar
+LSTM on the Python system codebase. Visualizing what the network has learned shows us what the Python producing
+network is paying attention to as it produces or read Python code.
 
 #### [06.1 Question matching.ipynb](https://github.com/DOsinga/deep_learning_cookbook/blob/master/06.1%20Question%20matching.ipynb)
+
+In this notebook we train a network to learn how to match questions and answers from stackoverflow; this sort of indexing
+than allows us to find given a question what the most likely answer in a database is. We try a variety of approaches to
+improve upon the first not terribly great results.
+
 #### [07.1 Text Classification.ipynb](https://github.com/DOsinga/deep_learning_cookbook/blob/master/07.1%20Text%20Classification.ipynb)
 #### [07.2 Emoji Suggestions.ipynb](https://github.com/DOsinga/deep_learning_cookbook/blob/master/07.2%20Emoji%20Suggestions.ipynb)
 #### [07.3 Tweet Embeddings.ipynb](https://github.com/DOsinga/deep_learning_cookbook/blob/master/07.3%20Tweet%20Embeddings.ipynb)
