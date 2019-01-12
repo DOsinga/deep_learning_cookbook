@@ -83,12 +83,12 @@ pyparsing==2.2.0          # via matplotlib
 pyproj==1.9.5.1           # via geopandas
 python-dateutil==2.6.1    # via botocore, jupyter-client, matplotlib, pandas
 pytz==2017.3              # via matplotlib, pandas
-pyyaml==3.12              # via keras
+pyyaml==4.2b4
 pyzmq==17.1.2             # via jupyter-client, notebook
 qtconsole==4.3.1          # via jupyter
 requests-oauthlib==1.0.0  # via flickrapi
 requests-toolbelt==0.8.0  # via flickrapi
-requests==2.18.4          # via flickrapi, internetarchive, requests-oauthlib, requests-toolbelt, smart-open, spotipy
+requests==2.18.4
 resampy==0.2.0            # via librosa
 s3transfer==0.1.12        # via boto3
 schema==0.6.7             # via internetarchive
