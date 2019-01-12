@@ -11,11 +11,10 @@ keras
 librosa
 matplotlib
 mwparserfromhell
-notebook>=5.7.2
+notebook
 Pillow
 plyvel
-pyyaml>=4.2b1
-requests>=1.23
+pyyaml
 sklearn
 spotipy
 tensorflow
