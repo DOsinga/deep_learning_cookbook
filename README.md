@@ -84,6 +84,11 @@ up next to each other; effectively doing what Word2Vec does for words, but now f
 #### [09.3 Retraining](https://github.com/DOsinga/deep_learning_cookbook/blob/master/09.3%20Retraining.ipynb)
 #### [10.1 Building an inverse image search service](https://github.com/DOsinga/deep_learning_cookbook/blob/master/10.1%20Building%20an%20inverse%20image%20search%20service.ipynb)
 #### [11.1 Detecting Multiple Images](https://github.com/DOsinga/deep_learning_cookbook/blob/master/11.1%20Detecting%20Multiple%20Images.ipynb)
+
+Use the fact that imag classification networks extract features per larger square sub-image to detect multiple dogs and cats in the same
+image or at least to know where in the image you can find your cat or dog. The approach her is a lot simpler than what is the state of the
+art, but also a lot easier to follow, so a good way to get started.
+
 #### [12.1 Activation Optimization](https://github.com/DOsinga/deep_learning_cookbook/blob/master/12.1%20Activation%20Optimization.ipynb)
 #### [12.2 Neural Style](https://github.com/DOsinga/deep_learning_cookbook/blob/master/12.2%20Neural%20Style.ipynb)
 #### [13.1 Quick Draw Cat Autoencoder](https://github.com/DOsinga/deep_learning_cookbook/blob/master/13.1%20Quick%20Draw%20Cat%20Autoencoder.ipynb)
