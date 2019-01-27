@@ -23,3 +23,5 @@ emoji
 gutenberg
 nltk
 infloect
+svglib
+psycopg2-binary
