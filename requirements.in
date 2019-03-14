@@ -16,7 +16,7 @@ Pillow
 plyvel
 sklearn
 spotipy
-tensorflow-gpu==1.12.0
+tf-nightly-gpu-2.0-preview
 tqdm
 twitter
 emoji
