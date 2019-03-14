@@ -1,0 +1,60 @@
+<html>
+  <script src="https://unpkg.com/keras-js"></script>
+  <script src="chars.js"></script>
+  <script>
+    function encode(st) {
+      var x = new Float32Array(num_chars * st.length);
+      for(var i = 0; i < st.length; i++) {
+        var ch = st[i];
+        idx = char_indices[ch];
+        x[idx + i * num_chars] = 1;
+      }
+      return x;
+    };
+
+    const model = new KerasJS.Model({
+      filepath: 'sayings.bin',
+      gpu: true
+    })
+
+    model.ready().then(() => {
+      document.getElementById("buttonGo").disabled = false
+    })
+
+    function runModel(steps) {
+      var txt = document.getElementById("textArea").value;
+      if (txt.length > 40) {
+        txt = txt.substr(txt.length - 40, 40);
+      } else if (txt.length < 40) {
+        txt = ' '.repeat(40 - txt.length) + txt;
+      }
+      const inputData = {input: encode(txt)}
+
+    // make predictions
+    return model.predict(inputData)
+          .then(outputData => {
+      var output = outputData.output;
+      var maxIdx = -1;
+      var maxVal = 0.0;
+      for (var idx = 0; idx < output.length; idx ++) {
+        if (output[idx] > maxVal) {
+          maxVal = output[idx];
+          maxIdx = idx;
+        }
+      }
+      var nextChar = indices_char["" + maxIdx];
+      document.getElementById("textArea").value += nextChar;
+      if (steps > 0) {
+        setTimeout(function() {
+          runModel(steps - 1);
+        }, 0);        
+      }
+  })
+}
+  </script>
+  <body>
+    Type something below at least 40 characters long.<br/>
+    <textarea cols="60" rows="4" id="textArea">i am all for progress, it is </textarea><br/>
+    <button onclick="runModel(250)" disabled id="buttonGo">Go!</button>
+  </body>
+</html>

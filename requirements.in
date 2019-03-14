@@ -11,9 +11,10 @@ keras
 librosa
 matplotlib
 mwparserfromhell
-notebook>5.4.1
+notebook
 Pillow
 plyvel
+pyyaml
 sklearn
 spotipy
 tf-nightly-gpu-2.0-preview
