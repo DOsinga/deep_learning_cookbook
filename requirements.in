@@ -17,5 +17,12 @@ plyvel
 pyyaml
 sklearn
 spotipy
-tensorflow
+tf-nightly-gpu-2.0-preview
 tqdm
+twitter
+emoji
+gutenberg
+nltk
+inflect
+svglib
+psycopg2-binary
