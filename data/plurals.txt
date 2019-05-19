@@ -16906,7 +16906,7 @@ hod	hods
 hodeida	hodeidas
 hodgkin	hodgkins
 hodoscope	hodoscopes
-hoe	ho
+hoe	hoes
 hoecake	hoecakes
 hoenir	hoenirs
 hoffa	hoffas
@@ -32708,7 +32708,7 @@ shocker	shockers
 shockley	shockleys
 shoddiness	shoddinesses
 shoddy	shoddies
-shoe	sho
+shoe	shoes
 shoebill	shoebills
 shoebox	shoeboxes
 shoeful	shoefuls
@@ -35458,7 +35458,7 @@ tack	tacks
 tacker	tackers
 tackle	tackles
 tackler	tacklers
-taco	tacoes
+taco	tacos
 tacoma	tacomas
 taconite	taconites
 tact	tacts
