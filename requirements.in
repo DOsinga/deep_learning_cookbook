@@ -1,3 +1,4 @@
+Pillow
 bs4
 emoji
 flickrapi
@@ -16,13 +17,12 @@ matplotlib
 mwparserfromhell
 nltk
 notebook
-Pillow
 plyvel
 psycopg2-binary
 pyyaml
 sklearn
 spotipy
-tensorflow==1.14
 svglib
+tensorflow==1.14
 tqdm
 twitter
