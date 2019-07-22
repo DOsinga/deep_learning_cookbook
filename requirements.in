@@ -1,10 +1,12 @@
 bs4
-emojis
+emoji
 flickrapi
 gensim
 geopandas
+gutenberg
 h5py
 imageio
+inflect
 internetarchive
 ipython
 jupyter
@@ -16,9 +18,11 @@ nltk
 notebook
 Pillow
 plyvel
+psycopg2-binary
 pyyaml
 sklearn
 spotipy
 tensorflow==1.14
+svglib
 tqdm
 twitter
