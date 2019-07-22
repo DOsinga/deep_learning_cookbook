@@ -1,4 +1,5 @@
 bs4
+emojis
 flickrapi
 gensim
 geopandas
@@ -11,11 +12,13 @@ keras
 librosa
 matplotlib
 mwparserfromhell
+nltk
 notebook
 Pillow
 plyvel
 pyyaml
 sklearn
 spotipy
-tensorflow
+tensorflow==1.14
 tqdm
+twitter

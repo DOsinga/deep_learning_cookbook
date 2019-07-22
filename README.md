@@ -1,6 +1,6 @@
 # Deep Learning Cookbook Notebooks
 
-This repository contains 36 python notebooks demonstrating most of the key
+This repository contains 35 python notebooks demonstrating most of the key
 machine learning techniques in Keras. The notebooks accompany the book
 [Deep Learning Cookbook](https://www.amazon.com/Deep-Learning-Cookbook-Practical-Recipes) but work well on their own. A GPU is not required to run them,
 but on a mere CPU things will take quite a while.
@@ -78,9 +78,22 @@ up next to each other; effectively doing what Word2Vec does for words, but now f
 
 #### [08.1 Sequence to sequence mapping](https://github.com/DOsinga/deep_learning_cookbook/blob/master/08.1%20Sequence%20to%20sequence%20mapping.ipynb)
 #### [08.2 Import Gutenberg](https://github.com/DOsinga/deep_learning_cookbook/blob/master/08.2%20Import%20Gutenberg.ipynb)
-#### [08.3 Subword tokenizing](https://github.com/DOsinga/deep_learning_cookbook/blob/master/08.3%20Subword%20tokenizing.ipynb)
+
+Small notebook demonstrating how to download books from the Gutenberg project. Tokenizes a set of book in preparation of
+the subword tokenizing in the next notebook.
+
 #### [09.1 Reusing a pretrained image recognition network](https://github.com/DOsinga/deep_learning_cookbook/blob/master/09.1%20Reusing%20a%20pretrained%20image%20recognition%20network.ipynb)
+
+Quick notebook demonstrating how to load a pretrained network and apply it on an image of, well, what else? a cat.
+Shows how to normalize the image and decode the predictions.
+
 #### [09.2 Images as embeddings](https://github.com/DOsinga/deep_learning_cookbook/blob/master/09.2%20Images%20as%20embeddings.ipynb)
+
+In this notebook we use the Flickr API to fetch a feed of search results for the search term cat. By running each result through a pre-trained network
+we get vectors that project the images in a 'space'. The center of that space in some way represents the most cat image possible. By reranking on
+distance to that center we can weed out images that are less cat like. Effectively we can improve upon the Flickr search results without
+knowing the content!
+
 #### [09.3 Retraining](https://github.com/DOsinga/deep_learning_cookbook/blob/master/09.3%20Retraining.ipynb)
 #### [10.1 Building an inverse image search service](https://github.com/DOsinga/deep_learning_cookbook/blob/master/10.1%20Building%20an%20inverse%20image%20search%20service.ipynb)
 #### [11.1 Detecting Multiple Images](https://github.com/DOsinga/deep_learning_cookbook/blob/master/11.1%20Detecting%20Multiple%20Images.ipynb)
