@@ -1,9 +1,9 @@
+Pillow
 bs4
 emoji
 flickrapi
 gensim
 geopandas
-gutenberg
 h5py
 imageio
 inflect
@@ -16,13 +16,12 @@ matplotlib
 mwparserfromhell
 nltk
 notebook
-Pillow
 plyvel
 psycopg2-binary
 pyyaml
 sklearn
 spotipy
 svglib
-tensorflow
+tensorflow==1.14
 tqdm
 twitter
