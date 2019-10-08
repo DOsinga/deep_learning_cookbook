@@ -11,6 +11,7 @@ internetarchive
 ipython
 jupyter
 keras
+descartes
 librosa
 matplotlib
 mwparserfromhell
